@@ -2,6 +2,11 @@
 
 echo "Setting up your Mac..."
 
+# Check for Oh My Zsh and install if we don't have it
+if test ! $(which omz); then
+  /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+fi
+
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -10,34 +15,29 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+rm -rf $HOME/.zshrc
+ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
 # Update Homebrew recipes
 brew update
 
-# Install all our dependencies with bundle (See Brewfile)
-#~/.dotfiles/apps.sh
+# Install all our brew dependences
+./brew.sh
 
-# Set global gitignore
-git config --global core.excludesfile ~/.dotfiles/.gitignore_global
+# Create a projects directories
+mkdir -p $HOME/dev
+mkdir -p $HOME/dev/fpg
 
-# Install PHP extensions with PECL
-#pecl install imagick redis swoole
+# Configure global .gitignore
+ln -s $DOTFILES/.gitignore_global $HOME/.gitignore
+git config --global core.excludesfile $HOME/.gitignore
 
-# Install global Composer packages
+# Install laravel installer globally
 composer global require laravel/installer
 
-# Create a projects directory
-mkdir $HOME/projects
-
-# Create sites subdirectories
-mkdir $HOME/projects/apps
-mkdir $HOME/projects/freelance
-mkdir $HOME/projects/accrue
-
-# Clone Github repositories
-~/.dotfiles/clone.sh
-
 # Symlink the Mackup config file to the home directory
-ln -s ~/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+#ln -s ./.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
-source ~/.dotfiles/.macos
+source ./.macos
