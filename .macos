@@ -20,7 +20,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Set computer name (as done via System Preferences → Sharing)
 sudo scutil --set ComputerName "MacBook Juan"
 sudo scutil --set HostName "MacBook Juan"
-sudo scutil --set LocalHostName "MacBook Juan"
+sudo scutil --set LocalHostName "juan-macbook"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MacBook Juan"
 
 # Disable the sound effects on boot
@@ -146,7 +146,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
-Follow the keyboard focus while zoomed in
+# Follow the keyboard focus while zoomed in
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable press-and-hold for keys in favor of key repeat
@@ -186,20 +186,23 @@ sudo pmset -a autorestart 1
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
 
-# Sleep the display after 15 minutes
-sudo pmset -a displaysleep 15
+# Sleep display while charging (minutes)
+sudo pmset -c displaysleep 5
 
-# Disable machine sleep while charging
-sudo pmset -c sleep 0
+# Sleep display on battery (minutes)
+sudo pmset -b displaysleep 3
+
+# Set machine sleep to 20 minutes while charging (disable with 0)
+sudo pmset -c sleep 20
 
 # Set machine sleep to 5 minutes on battery
 sudo pmset -b sleep 5
 
 # Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+sudo pmset -a standbydelay 86,400
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+#sudo systemsetup -setcomputersleep Off > /dev/null
 
 # Hibernation mode
 # 0: Disable hibernation (speeds up entering sleep mode)
