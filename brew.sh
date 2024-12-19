@@ -12,6 +12,7 @@ brew install ffmpeg
 brew install postgresql@17
 brew install pyenv
 brew install pyenv-virtualenv
+brew install mailpit
 #brew install php         # Included in herd
 #brew install composer    # Included in herd
 brew install mas
