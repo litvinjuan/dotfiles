@@ -399,6 +399,9 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 # Speed up animations in general
 defaults write com.apple.Accessibility reduceMotion -bool true
 
+# Disable 'When switching to an application, switch to a Space with open windows for the application'
+defaults write com.apple.Dock workspaces-auto-swoosh -bool false
+
 # Don’t group windows by application in Mission Control
 # (i.e. use the old Exposé behavior instead)
 defaults write com.apple.dock expose-group-by-app -bool false

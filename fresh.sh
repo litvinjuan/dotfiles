@@ -32,6 +32,9 @@ mkdir -p $HOME/dev/fpg
 # Configure global .gitignore
 ln -s $DOTFILES/.gitignore_global $HOME/.gitignore
 git config --global core.excludesfile $HOME/.gitignore
+git config --global user.name "Juan Litvin"
+git config --global user.email "litvinjuan@gmail.com"
+git config --global core.editor "nano"
 
 # Install laravel installer globally
 composer global require laravel/installer
