@@ -39,6 +39,9 @@ git config --global core.editor "nano"
 # Install laravel installer globally
 composer global require laravel/installer
 
+# Install Rosetta
+sudo softwareupdate --install-rosetta
+
 # Symlink the Mackup config file to the home directory
 #ln -s ./.mackup.cfg $HOME/.mackup.cfg
 
