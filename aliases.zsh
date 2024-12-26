@@ -7,7 +7,7 @@ alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 
 alias dotfiles="cd $DOTFILES"
 alias dev='cd $HOME/dev'
-alias fpg='cd $HOME/fpg'
+alias fpg='cd $HOME/dev/fpg'
 
 # Laravel
 alias a="herd php artisan"
@@ -40,6 +40,7 @@ alias dcr='docker compose down && docker compose up -d'
 alias gs="git status"
 alias gb="git branch"
 alias gc="git checkout"
+alias clone="git clone"
 alias amend="git add . && git commit --amend --no-edit"
 alias commit="git add . && git commit -m"
 alias diff="git diff"

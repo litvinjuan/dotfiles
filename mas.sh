@@ -2,12 +2,11 @@
 
 # Mac App Store
 # mas 'Surfshark', id: 1437809329
-mas 'Telegram', id: 747648890
-mas 'WhatsApp Desktop', id: 1147396723
-mas 'Final Cut Pro', id: 424389933
-mas 'Compressor', id: 424390742
-mas 'Motion', id: 434290957
-mas '1Password for Safari', id: 1569813296
+mas install 747648890 # Telegram
+mas install 424389933 # Final Cut Pro
+mas install 424390742 # Compressor
+mas install 434290957 # Motion
+mas install 1569813296 # 1Password for Safari
 # mas 'Logic Pro', id: 634148309
 # mas 'MaginStage', id: 634159523
 # mas 'GarageBand', id: 682658836
