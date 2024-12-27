@@ -166,7 +166,6 @@ defaults write NSGlobalDomain AppleLocale -string "es_AR@currency=ARS"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 defaults write NSGlobalDomain AppleFirstWeekday -dict "gregorian" 1
-defaults write NSGlobalDomain AppleICUDateFormatStrings -dict-add 1 "dd/MM/yyyy"
 defaults write NSGlobalDomain AppleICUNumberSymbols -dict-add decimal "en_US"
 defaults write NSGlobalDomain AppleICUNumberSymbols -dict-add group "en_US"
 
