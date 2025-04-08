@@ -112,6 +112,8 @@ source $DOTFILES/aliases.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export DISABLE_UPDATE_PROMPT=true
+
 # Herd injected PHP binary.
 export PHP_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/":$PHP_INI_SCAN_DIR
 
@@ -159,3 +161,6 @@ export HERD_PHP_84_INI_SCAN_DIR="/Users/litvinjuan/Library/Application Support/H
 
 # Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/litvinjuan/Library/Application Support/Herd/config/php/83/"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/litvinjuan/.lmstudio/bin"
