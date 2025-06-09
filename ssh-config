@@ -1,4 +1,4 @@
-Include ~/.ssh/config_local
+Include ~/.ssh/config-local
 
 Host fpg-1
     HostName 149.50.138.153
