@@ -1,0 +1,26 @@
+Include ~/.ssh/config_local
+
+Host fpg-1
+    HostName 149.50.138.153
+    User forge
+    Port 5677
+
+Host fpg-2
+    HostName 188.245.189.9
+    User forge
+    Port 22
+
+Host fpg-3
+    HostName 195.35.42.93
+    User forge
+    Port 22
+
+Host fpg-db-1
+    HostName 188.245.183.94
+    User forge
+    Port 22
+
+Host fpg-mail
+    HostName 149.50.138.242
+    User root
+    Port 5494

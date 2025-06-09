@@ -19,6 +19,10 @@ fi
 rm -rf $HOME/.zshrc
 ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+rm -rf $HOME/.ssh/config
+touch $HOME/.ssh/config-local
+ln -sw $HOME/.dotfiles/ssh-config $HOME/.ssh/config
+
 # Update Homebrew recipes
 brew update
 
