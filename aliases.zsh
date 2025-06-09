@@ -4,6 +4,7 @@ alias py='python'
 alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AahlFo --color --group-directories-first"
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias brewup="brew update && brew upgrade && brew upgrade --cask && brew cleanup"
 
 alias dotfiles="cd $DOTFILES"
 alias dev='cd $HOME/dev'
