@@ -1,5 +1,9 @@
 Include ~/.ssh/config-local
 
+Host juan
+	HostName 45.77.189.107
+	User forge
+
 Host fpg-1
     HostName 149.50.138.153
     User forge
