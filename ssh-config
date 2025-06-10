@@ -1,6 +1,6 @@
 Include ~/.ssh/config-local
 
-Host juan
+Host juan-1
 	HostName 45.77.189.107
 	User forge
 
