@@ -42,3 +42,5 @@ brew install --cask 'insomnia'
 brew install --cask 'dbngin'
 brew install --cask 'todoist'
 brew install --cask 'cursor'
+brew install --cask jordanbaird-ice
+brew install --cask blip
