@@ -31,5 +31,5 @@ Host fpg-mail
 
 Host fpg-tmp-1
     HostName 179.43.112.77
-    User root
+    User forge
     Port 5653
