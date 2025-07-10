@@ -28,3 +28,8 @@ Host fpg-mail
     HostName 149.50.138.242
     User root
     Port 5494
+
+Host fpg-tmp-1
+    HostName 179.43.112.77
+    User root
+    Port 5653
