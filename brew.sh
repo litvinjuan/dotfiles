@@ -44,3 +44,5 @@ brew install --cask 'todoist'
 brew install --cask 'cursor'
 brew install --cask jordanbaird-ice
 brew install --cask blip
+brew install --cask vivaldi
+brew install --cask signal
