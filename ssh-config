@@ -6,7 +6,7 @@ Host juan-1
 
 Host fpg-1
     HostName 149.50.138.153
-    User forge
+    User root
     Port 5677
 
 Host fpg-2
