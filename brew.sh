@@ -17,6 +17,7 @@ brew install mailpit
 #brew install composer    # Included in herd
 brew install mas
 #brew install mackup
+brew install nmap
 
 # Casks
 brew install --cask 'whatsapp'
@@ -44,3 +45,4 @@ brew install --cask 'todoist'
 brew install --cask 'cursor'
 brew install --cask jordanbaird-ice
 brew install --cask blip
+brew install --cask restfox

@@ -28,3 +28,8 @@ Host fpg-mail
     HostName 149.50.138.242
     User root
     Port 5494
+
+Host pg-4
+    HostName 138.199.220.136
+    User root
+    Port 22

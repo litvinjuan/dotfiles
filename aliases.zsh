@@ -6,6 +6,9 @@ alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias brewup="brew update && brew upgrade && brew upgrade --cask && brew cleanup"
 
+alias cleardns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias testdns="dscacheutil -q host -a name"
+
 alias dotfiles="cd $DOTFILES"
 alias dev='cd $HOME/dev'
 alias fpg='cd $HOME/dev/fpg'

@@ -164,3 +164,6 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/litvinjuan/Library/Application Support/H
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/litvinjuan/.lmstudio/bin"
+export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
