@@ -5,6 +5,7 @@ alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AahlFo --color --group-
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias brewup="brew update && brew upgrade && brew upgrade --cask && brew cleanup"
+alias sha="shasum -a 256"
 
 alias cleardns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias testdns="dscacheutil -q host -a name"

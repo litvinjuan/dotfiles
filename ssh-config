@@ -6,7 +6,7 @@ Host juan-1
 
 Host fpg-1
     HostName 149.50.138.153
-    User forge
+    User root
     Port 5677
 
 Host fpg-2
@@ -28,6 +28,11 @@ Host fpg-mail
     HostName 149.50.138.242
     User root
     Port 5494
+
+Host fpg-tmp-1
+    HostName 179.43.112.77
+    User forge
+    Port 5653
 
 Host pg-4
     HostName 138.199.220.136

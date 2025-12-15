@@ -46,3 +46,4 @@ brew install --cask 'cursor'
 brew install --cask jordanbaird-ice
 brew install --cask blip
 brew install --cask restfox
+brew install --cask signal
